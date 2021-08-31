@@ -18,8 +18,9 @@ sidebar_position: 1
 
 |Versions|
 |--------|
-| 1.16.2/3/4/5 (Supported)|
-| 1.15.0/1/2 (LTS)|
+| 1.17.1 (Supported)|
+| 1.16.2/3/4/5 (LTS)|
+| 1.15.0/1/2 (Not Supported)|
 | 1.14.1/2/3/4 (Not Supported) |
 | 1.12.2 (Not Supported) |
 

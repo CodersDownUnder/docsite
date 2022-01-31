@@ -118,7 +118,7 @@ There needs to be a `,` after each entry, except the last one and make sure each
 ```toml
   #Use the whitelist
   enablewhitelist = false
-``
+```
 
 ## Taglist
 ---

@@ -1,0 +1,9 @@
+siteUpdate:
+  label: Site Updates
+  permalink: /siteupdates
+  description: Site Updates
+
+modUpdate:
+  label: Mod Updates
+  permalink: /modupdates
+  description: Mod Updates

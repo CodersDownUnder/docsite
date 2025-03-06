@@ -11,7 +11,7 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://codersdownunder.net",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -109,28 +109,36 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
-        //   {
-        //     title: "Docs",
-        //     items: [
-        //       {
-        //         label: "Tutorial",
-        //         to: "/docs/intro",
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: "Community",
-        //     items: [
-        //       {
-        //         label: "Discord",
-        //         href: "https://discordapp.com/invite/docusaurus",
-        //       },
-        //       {
-        //         label: "X",
-        //         href: "https://x.com/docusaurus",
-        //       },
-        //     ],
-        //   },
+        {
+          title: "Docs",
+          items: [
+            {
+              label: "Flower Seeds 2",
+              to: "/docs/flowerseeds",
+            },
+            {
+              label: "Growable Cells 2",
+              to: "/docs/growablecells",
+            },
+            {
+              label: "Lootbagmod",
+              to: "docs/lootbagmod",
+            },
+            {
+              label: "Magic Eight Cube",
+              to: "docs/magiceightcube",
+            },
+          ],
+        },
+        {
+          title: "Community",
+          items: [
+            {
+              label: "Discord",
+              href: "https://discord.gg/YyvDeG2",
+            },
+          ],
+        },
         {
           title: "More",
           items: [

@@ -1,12 +1,13 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import { version } from "react";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "CodersDownUnder Mods",
+  //tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -18,7 +19,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "CodersDownUnder", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  projectName: "CodersDownUnderModSite", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -31,47 +32,20 @@ const config: Config = {
     locales: ["en"],
   },
 
-  plugins: [
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "magiceightcube",
-        path: "magiceightcube",
-        routeBasePath: "magiceightcube",
-        sidebarPath: "./sidebarsMagicEightCube.ts",
-        // ... other options
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "lootbagmod",
-        path: "lootbagmod",
-        routeBasePath: "lootbagmod",
-        sidebarPath: "./sidebarsLootBagMod.ts",
-        // ... other options
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "growablecells",
-        path: "growablecells",
-        routeBasePath: "growablecells",
-        sidebarPath: "./sidebarsGrowableCells.ts",
-        // ... other options
-      },
-    ],
-  ],
-
   presets: [
     [
       "classic",
       {
         docs: {
-          path: "flowerseeds",
-          routeBasePath: "flowerseeds",
-          sidebarPath: "./sidebarsFlowerSeeds.ts",
+          path: "docs",
+          routeBasePath: "docs",
+          sidebarPath: "./sidebars.ts",
+          lastVersion: "current",
+          versions: {
+            current: {
+              label: "1.21.4",
+            },
+          },
         },
         blog: {
           showReadingTime: true,
@@ -97,29 +71,29 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "My Site",
+      title: "CodersDownUnder Mods",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
       },
       items: [
         {
-          to: "/flowerseeds/flowerseeds",
+          to: "/docs/flowerseeds",
           label: "Flowerseeds 2",
           position: "left",
         },
         {
-          to: "/magiceightcube/magiceightcube",
+          to: "/docs/magiceightcube",
           label: "Magic Eight Cube",
           position: "left",
         },
         {
-          to: "/lootbagmod/",
+          to: "/docs/lootbagmod",
           label: "Loot Bag Mod",
           position: "left",
         },
         {
-          to: "/growablecells/growablecells2",
+          to: "/docs/growablecells",
           label: "Growable Cells 2",
           position: "left",
         },
@@ -127,67 +101,51 @@ const config: Config = {
 
         {
           type: "docsVersionDropdown",
-          docsPluginId: "magiceightcube",
           position: "right",
-          //dropdownItemsAfter: [{ to: "/versions", label: "All versions" }],
-          dropdownActiveClassDisabled: true,
-        },
-        {
-          type: "docsVersionDropdown",
-          docsPluginId: "lootbagmod",
-          position: "right",
-          //dropdownItemsAfter: [{ to: "/versions", label: "All versions" }],
-          dropdownActiveClassDisabled: true,
-        },
-        {
-          type: "docsVersionDropdown",
-          docsPluginId: "growablecells",
-          position: "right",
-          //dropdownItemsAfter: [{ to: "/versions", label: "All versions" }],
           dropdownActiveClassDisabled: true,
         },
       ],
     },
     footer: {
       style: "dark",
-      // links: [
-      //   {
-      //     title: "Docs",
-      //     items: [
-      //       {
-      //         label: "Tutorial",
-      //         to: "/docs/intro",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: "Community",
-      //     items: [
-      //       {
-      //         label: "Discord",
-      //         href: "https://discordapp.com/invite/docusaurus",
-      //       },
-      //       {
-      //         label: "X",
-      //         href: "https://x.com/docusaurus",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: "More",
-      //     items: [
-      //       {
-      //         label: "Blog",
-      //         to: "/blog",
-      //       },
-      //       {
-      //         label: "GitHub",
-      //         href: "https://github.com/facebook/docusaurus",
-      //       },
-      //     ],
-      //   },
-      // ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      links: [
+        //   {
+        //     title: "Docs",
+        //     items: [
+        //       {
+        //         label: "Tutorial",
+        //         to: "/docs/intro",
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: "Community",
+        //     items: [
+        //       {
+        //         label: "Discord",
+        //         href: "https://discordapp.com/invite/docusaurus",
+        //       },
+        //       {
+        //         label: "X",
+        //         href: "https://x.com/docusaurus",
+        //       },
+        //     ],
+        //   },
+        {
+          title: "More",
+          items: [
+            {
+              label: "Blog",
+              to: "/blog",
+            },
+            {
+              label: "GitHub",
+              href: "https://github.com/CodersDownUnder",
+            },
+          ],
+        },
+      ],
+      copyright: `MIT CodersDownUnder. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

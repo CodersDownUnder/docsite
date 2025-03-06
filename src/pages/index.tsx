@@ -18,7 +18,7 @@ function HomepageHeader() {
             <Card
               modName="Flower Seeds 2"
               modDescription="This is a Description"
-              modLink="/flowerseeds/flowerseeds"
+              modLink="/docs/flowerseeds"
               modLinkText="Flower Seeds 2 Documentation"
             />
           </div>
@@ -27,7 +27,7 @@ function HomepageHeader() {
             <Card
               modName="Magic Eight Cube"
               modDescription="This is a Description"
-              modLink="/magiceightcube/magiceightcube"
+              modLink="/docs/magiceightcube"
               modLinkText="Magic Eight Cube Documentation"
             />
           </div>
@@ -36,7 +36,7 @@ function HomepageHeader() {
             <Card
               modName="Loot Bag Mod"
               modDescription="This is a Description"
-              modLink="/lootbagmod/"
+              modLink="/docs/lootbagmod/"
               modLinkText="LootBagMod Documentation"
             />
           </div>
@@ -46,7 +46,7 @@ function HomepageHeader() {
             <Card
               modName="Growable Cells"
               modDescription="This is a Description"
-              modLink="/growablecells/growablecells2"
+              modLink="/docs/growablecells2"
               modLinkText="Growable Cells 2 Documentation"
             />
           </div>

@@ -1,0 +1,102 @@
+# Variants
+---
+
+Custom variants of magic eight cubes are created using datapacks.
+
+## Location
+---
+
+Variant Json files go into the data/magiceightcube/cube_variants directory in your datapack.
+
+## File Specification
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="magiceightcube" label="magiceightcube.json" default>
+  ```json title="data/magiceightcube/cube_variants/magiceightcube.json"
+  {
+    "badphrases": [
+      "text.eightball.message1",
+      "text.eightball.message2",
+      "text.eightball.message3",
+      "text.eightball.message4",
+      "text.eightball.message5"
+    ],
+    "display_name": {
+      "translate": "item.magiceightcube.name"
+    },
+    "goodphrases": [
+      "text.eightball.message11",
+      "text.eightball.message12",
+      "text.eightball.message13",
+      "text.eightball.message14",
+      "text.eightball.message15",
+      "text.eightball.message16",
+      "text.eightball.message17",
+      "text.eightball.message18",
+      "text.eightball.message19",
+      "text.eightball.message20"
+    ],
+    "title": "magiceightcube",
+    "translatable": true,
+    "unsurephrases": [
+      "text.eightball.message6",
+      "text.eightball.message7",
+      "text.eightball.message8",
+      "text.eightball.message9",
+      "text.eightball.message10"
+    ]
+  }
+  ```
+  </TabItem>
+  <TabItem value="example" label="example.json" default>
+
+```json title="data/magiceightcube/cube_variants/example.json"
+{
+  "badphrases": [
+    "no",
+    "Pay $1.99 for 5 more answers."
+  ],
+  "display_name": "Example Cube",
+  "goodphrases": [
+    "How Do You Keep An Idiot Amused? Please Shake For Answer.",
+    "Think, what would a Jedi do?",
+    "Don't do it, your friends are idiots."
+  ],
+  "title": "example",
+  "translatable": false,
+  "unsurephrases": [
+    "Go ask a real person.",
+    "Please shake again."
+  ]
+}
+
+```
+</TabItem>
+</Tabs>
+
+  ### Available Fields
+  ---
+  | Field | Type | Details |
+  | ----- | ---- | ------- |
+  | display_name | String | Name of Magic Eight Cube ingame |
+  | title | String | name of variant (No Spaces) |
+  | translatable | Boolean (true or false) | true if variant uses translatable strings as in magiceightcube.json, or false if it dosent as in example.json|
+  | badphrases | List | List of bad phrases |
+  | unsurephrases | List | List of unsure phrases |
+  | goodphrases | List | List of good phrases |
+
+
+## Using in recipes, loottables, etc
+---
+```json
+"result": {
+    "components": {
+      "magiceightcube:cube_variant": "magiceightcube:example"
+    },
+    "count": 1,
+    "id": "magiceightcube:custommagiceightcube"
+  }
+```

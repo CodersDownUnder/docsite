@@ -3,15 +3,15 @@
 
 ## About
 ---
-| Flower Seeds |
-|----------------|
-| Rarity:	Depending on Flower |                       
-| Craftability: Craftable |
 
 |Versions|
 |--------|
-| 1.17.1 (Supported)|
-| 1.16.2/3/4/5 (LTS)|
+| 1.21.X (Supported)|
+| 1.20.X (Npt Supported)|
+| 1.19.X (Not Supported)|
+| 1.18.X (Not Supported)|
+| 1.17.1 (Not Supported)|
+| 1.16.2/3/4/5 (Not Supported)|
 
 ---
 
@@ -32,8 +32,8 @@ Flower seeds are made by combining a flower of your choice with 1 wheat seed in 
 ## Supported Flowers
 ---
 
-All 1 high flowers from Minecraft.    
-The Cyan Rose from Cyclic.  
+All 1 high flowers from Minecraft.
+The Cyan Rose from Cyclic.
 All 1 high flowers from Terra Incognita
 
 ---
